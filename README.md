@@ -1,5 +1,3 @@
-# jlette5M.github.io
-
 jlette5M.github.io
 ====================
 
