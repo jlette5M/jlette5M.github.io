@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html>
 <title>Juliette Zimmer</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,10 +10,9 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 .w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
 </style>
-  </head>
-  <body class="w3-light-grey w3-content" style="max-width:1600px">
-    
-    <!-- Sidenav/menu -->
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
 <nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
   <div class="w3-container">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
@@ -29,25 +27,184 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	  <a href="#contact" onclick="w3_close()" class="w3-padding">CONTACT</a>
 	   
 </nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container" id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><b>Projects</b></h1>
+	<!--
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <button class="w3-btn">ALL</button>
+      <button class="w3-btn w3-white">Design</button>
+      <button class="w3-btn w3-white w3-hide-small">Photos</button>
+      <button class="w3-btn w3-white w3-hide-small">Art</button>
+    </div>
+  </header>-->
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="http://www.juliettesrecipes.com/">
+		<img src="https://pillowchum.files.wordpress.com/2017/01/jr.png" alt="JR-image" style="width:100%" class="w3-hover-opacity">
+      </a>
+	  <div class="w3-container w3-white">
+        <p><b>Juliette's Recipes</b></p>
+        <p>Ever want to make something and you find yourself flipping through a recipe book, wondering what would be a good choice? This website is designed to help you make practical cooking decisions. Minimizing waste and fresh product are constant concerns with perishable items. With an ingredient search, you can create menus and balanced nutritious meals, based on what is on hand.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://webdeveloptogetherblog.wordpress.com/">
+		<img src="https://pillowchum.files.wordpress.com/2017/01/webdevtogether.png" alt="webdevtogetheriimage" style="width:100%" class="w3-hover-opacity">
+      </a>
+	  <div class="w3-container w3-white">
+        <p><b>Let's Web Develop Together!</b></p>
+        <p>Greetings from <a href="https://www.moritzzimmer.com/#web">Moritz</a> and Juliette! The web is constantly changing, and we are always learning together! This blog is intended to be a place where can we share our thoughts on the things that interest us technology-wise, while also being a open format for discussion on just about anything web-related that is exciting or interesting or just seems worth mentioning. </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://pillowchum.files.wordpress.com/2017/01/comingsoon.png" alt="Coming-Soon-image" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>How To Take Care of the Home: Ultimate Guide</b></p>
+        <p>Someday, I would like to make a website about how to be the best homemaker ever!</p>
+      </div>
+    </div>
+  </div>
+
+  <hr style="background-color: #fff; border-top: 5px dotted #008080;" >
+  <!-- Images of Me -->
+  <!--div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="" alt="Me-image1" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="" alt="Me-image2" style="width:100%">
+    </div>
+  </div>-->
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>Hi, I'm Juliette. I love both web-related things and culinary arts. Programming and recipes are my thing! Currently learning about web development.</p>
+    <hr>
     
-    <section class="page-header">
-      <h1 class="project-name">Juliette's Github Website</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
+    <h4><b>What I Do</b></h4>
+    <!-- Skills -->
+    <p>Food Service is a passion of mine! I am a homemaker, so of course I manage the household. I solve problems, I cook, I clean. Most people in Food Service aren't very strong with computers, but I am. I also have restaurant experience in dough production and management. I love cooking and cannot go a day without doing it. Programming is tricky, yet addictive for me. I have worked with Python and C programming (but also have lightly worked with SQL) and just recently improved my CSS skills. JavaScript is the current language I am learning. I really have come to enjoy learning and applying SEO as well. My favorite aspect of programming is how it makes any job easier! </p>
+  
+    <h4><b>What I Have Done</b></h4>
+    <!-- Skills -->
+    <p>I am subscribed to a few web development newsletters and I use these resources to not only stay up-do-date with current trends, but also, as I learn new things, I blog for <a href="https://webdeveloptogetherblog.wordpress.com/">Let's Web Develop Together</a> with <a href="http://www.moritzzimmer.com/">Moritz Zimmer</a>. I am actively involved with two cooking websites, <a href="http://www.juliettesrecipes.com/">Juliette's Recipes</a> and <a href="http://www.copyandpasta.com/">Copy & Pasta</a>. Both of these websites are a collaboration between myself and <a href="http://www.moritzzimmer.com/">Moritz Zimmer</a>. I had a lot to do with the content creation for these websites. I also have one other web development (WordPress) website that is full of lots of helpful links that relate to web development: <a href="https://webdevcatblog.wordpress.com/">Web Dev Cat's Blog</a>. While it is a simple website, it very much demonstrates what a thorough researcher I am when it comes to learning and being able to make use of what I find. </p>
+  
+    <p>
+      <button class="w3-btn w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button>
+    </p>
+    <hr>
+    
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Juliette</h3>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>email Juliette</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>DFW Area, US</p>
+      </div>
+      <!--div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>512312311</p>
+      </div>-->
+    </div>
+    <hr class="w3-opacity">
+    <form action="form.asp" target="_blank">
+      <div class="w3-group">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-group">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-group">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-btn w3-padding-large w3-margin-bottom">Send Message</button>
+    </form>
+  </div>
 
-<p>Technologically-inclined female who loves both web-related things and culinary arts. Programming and recipes are my thing! Currently learning about web development.</p>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>COOKING</h3>
+      <p><a href="http://www.juliettesrecipes.com">juliettesrecipes.com</a></p>
+      <!--<p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
+    </div>
+  
+    <div class="w3-third">
+      <h3>MY BLOGS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">About Web Development</span><br>
+          <span><a href="https://webdeveloptogetherblog.wordpress.com/">Let's Web Develop Together!</a></span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">About Cooking</span><br>
+          <span><a href="">Juliette's Recipes Blog</a> (Coming Soon!)</span>
+        </li> 
+      </ul>
+    </div>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What I Do</h3>
+    <div class="w3-third">
+      <h3>GIT HUB</h3>
+      <p>Git Hub User Page: 
+        <a href="https://github.com/jlette5M/">jlette5m.github.io</a>
+	  </p>
+	  <p>
+	My Github Homepage: 
+		<a href="http://jlette5M.github.io/">http://jlette5m.github.io/</a>
+		</p>
+    </div>
 
-<p>Food Service is a passion of mine! I am a homemaker, so of course I manage the household. I solve problems, I cook, I clean. 
-  Most people in Food Service aren't very strong with computers, 
-  but I am. I also have restaurant experience in dough production and management. 
-  I love cooking and cannot go a day without doing it.
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
 </p>
 
 <p>Programming is tricky, yet addictive for me. 
